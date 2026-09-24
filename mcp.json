@@ -6,7 +6,7 @@
       "command": "uvx",
       "args": [
         "--from",
-        "git+https://github.com/harrylabsj/freight-reconciliation@v0.3.0",
+        "git+https://github.com/harrylabsj/freight-reconciliation@e6aea474a1a3d7dbd634a771cb5c660a20379c59",
         "freight-mcp"
       ],
       "env": {
