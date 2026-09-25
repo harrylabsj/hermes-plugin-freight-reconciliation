@@ -41,7 +41,7 @@ Start it locally with the same case root as the connector:
 ```bash
 read -s -p 'admin token: ' FREIGHT_ADMIN_TOKEN; echo; export FREIGHT_ADMIN_TOKEN
 export FREIGHT_RECON_ROOT="${FREIGHT_RECON_ROOT:-$HOME/.local/share/freight-reconciliation}"
-uvx --from git+https://github.com/harrylabsj/freight-reconciliation@53a01c275377115ea9abd6de8e2df47fcc06b04e freight-admin
+uvx --from git+https://github.com/harrylabsj/freight-reconciliation@e8cd259c43f3607250eda4074ce3e8ab0e6e1bf5 freight-admin
 ```
 
 Then open http://127.0.0.1:8765/. The page is English by default (a Chinese

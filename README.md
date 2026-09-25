@@ -33,7 +33,7 @@ The product ships in two host forms that share one engine
 
 ```text
 plugin.json   manifest (license: MIT)
-mcp.json      stdio MCP server, pinned to the immutable commit 53a01c27 (release v0.4.0)
+mcp.json      stdio MCP server, pinned to the immutable commit e8cd259c (release v0.4.1)
 skills/       3 workflow skills, English SKILL.md authoritative + SKILL.zh-CN.md variants
 LICENSE       MIT
 ```
@@ -53,7 +53,7 @@ on a network share.
 ```bash
 read -s -p 'admin token: ' FREIGHT_ADMIN_TOKEN; echo; export FREIGHT_ADMIN_TOKEN
 export FREIGHT_RECON_ROOT=<same root as the connector>
-uvx --from git+https://github.com/harrylabsj/freight-reconciliation@53a01c275377115ea9abd6de8e2df47fcc06b04e freight-admin
+uvx --from git+https://github.com/harrylabsj/freight-reconciliation@e8cd259c43f3607250eda4074ce3e8ab0e6e1bf5 freight-admin
 # open http://127.0.0.1:8765/
 ```
 
@@ -70,7 +70,7 @@ printf '%s\n' \
   '{"jsonrpc":"2.0","id":1,"method":"initialize","params":{"protocolVersion":"2025-06-18","capabilities":{},"clientInfo":{"name":"probe","version":"0"}}}' \
   '{"jsonrpc":"2.0","method":"notifications/initialized"}' \
   '{"jsonrpc":"2.0","id":2,"method":"tools/list"}' \
-  | uvx --from git+https://github.com/harrylabsj/freight-reconciliation@53a01c275377115ea9abd6de8e2df47fcc06b04e freight-mcp
+  | uvx --from git+https://github.com/harrylabsj/freight-reconciliation@e8cd259c43f3607250eda4074ce3e8ab0e6e1bf5 freight-mcp
 # expect: 14 tools
 ```
 
