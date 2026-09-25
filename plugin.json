@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "freight-reconciliation",
-  "version": "0.3.0",
-  "description": "Payer-side freight reconciliation expert: import carrier bills and trip ledgers into a deterministic local core (SQLite, no cloud), re-calculate against contracted rates, and produce evidence-linked difference lists for human review. Never approves payments, never sends anything; final confirmations route through a local admin page. MCP server pinned via uvx to harrylabsj/freight-reconciliation@v0.3.0.",
+  "version": "0.4.0",
+  "description": "Payer-side freight reconciliation expert: import carrier bills and trip ledgers into a deterministic local core (SQLite, no cloud), re-calculate against contracted rates, and produce evidence-linked difference lists for human review. Never approves payments, never sends anything; final confirmations route through a local admin page. MCP server pinned via uvx to the immutable commit harrylabsj/freight-reconciliation@53a01c275377115ea9abd6de8e2df47fcc06b04e (release v0.4.0).",
   "author": {
     "name": "harrylabsj",
     "url": "https://github.com/harrylabsj"

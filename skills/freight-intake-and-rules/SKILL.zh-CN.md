@@ -32,7 +32,7 @@ description: 登记来源、确认映射并对本地确定性 Core 准备费率�
 ```bash
 read -s -p '管理页口令: ' FREIGHT_ADMIN_TOKEN; echo; export FREIGHT_ADMIN_TOKEN
 export FREIGHT_RECON_ROOT="${FREIGHT_RECON_ROOT:-$HOME/.local/share/freight-reconciliation}"
-uvx --from git+https://github.com/harrylabsj/freight-reconciliation@v0.3.0 freight-admin
+uvx --from git+https://github.com/harrylabsj/freight-reconciliation@53a01c275377115ea9abd6de8e2df47fcc06b04e freight-admin
 ```
 
 随后访问 http://127.0.0.1:8765/。模型永远无法确认；确认只发生在管理页。
